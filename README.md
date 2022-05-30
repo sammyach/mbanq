@@ -1,4 +1,4 @@
-# MbanqSPA
+# mBANQ (in progress)
 
-##### A Software-as-a-Service platform for microfinance service providers to manage their savings and loans portfolio
+##### An online platform for microfinance and credit service providers to manage their savings and loans portfolio
 
