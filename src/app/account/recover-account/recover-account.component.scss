@@ -1,0 +1,50 @@
+main{
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #E1F5FD;
+}
+
+.wrapper{
+  width: 500px;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-field{
+  padding-top: 1rem;
+}
+
+:host ::ng-deep .p-inputtext, :host ::ng-deep .p-password, :host ::ng-deep .p-button{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+:host ::ng-deep .p-button{
+  margin-top: 2rem;
+  background: #1C61A5;
+}
+
+a{
+  text-decoration: none;
+  color: #1C61A5;
+}
+
+label{
+  color: #1C61A5;
+}
+
+p{
+  color: #1C61A5;
+  text-align: center;
+}
+
+.message{
+  font-size: .9rem;
+}
