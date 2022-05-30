@@ -5,6 +5,7 @@ main{
   justify-content: center;
   align-items: center;
   background: #E1F5FD;
+  width: 100%;
 }
 
 .wrapper{
@@ -47,4 +48,13 @@ p{
 
 .message{
   font-size: .9rem;
+}
+
+@media (max-width: 911px){
+  .wrapper{
+    width: 350px;
+  }
+  .message{
+    font-size: .7rem;
+  }
 }

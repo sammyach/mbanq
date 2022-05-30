@@ -5,6 +5,7 @@ main{
   justify-content: center;
   align-items: center;
   background: #E1F5FD;
+  width: 100%;
 }
 
 .wrapper{
@@ -55,4 +56,10 @@ p{
   font-size: 1.5rem;
   color: #1C61A5;
   text-align: center;
+}
+
+@media (max-width: 911px){
+  .wrapper{
+    width: 350px;
+  }
 }
