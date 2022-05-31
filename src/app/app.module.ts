@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CardModule} from 'primeng/card';
 import {PasswordModule} from 'primeng/password';
 import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
+import {TableModule} from 'primeng/table';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,8 @@ import { FooterComponent } from './_shared/ui/footer/footer.component';
 import { RecoverAccountComponent } from './account/recover-account/recover-account.component';
 import { SidebarComponent } from './_shared/ui/sidebar/sidebar.component';
 import { ManageCustomersComponent } from './manage-customers/manage-customers.component';
+import { ListCustomersComponent } from './manage-customers/list-customers/list-customers.component';
+import { ManageOrganizationComponent } from './manage-organization/manage-organization.component';
 
 @NgModule({
   declarations: [
@@ -26,20 +30,25 @@ import { ManageCustomersComponent } from './manage-customers/manage-customers.co
     FooterComponent,
     RecoverAccountComponent,
     SidebarComponent,
-    ManageCustomersComponent
+    ManageCustomersComponent,
+    ListCustomersComponent,
+    ManageOrganizationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     CardModule,
     PasswordModule,
     InputTextModule,
     ProgressSpinnerModule,
-    ButtonModule
+    ButtonModule,
+    TableModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

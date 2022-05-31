@@ -5,9 +5,13 @@ section{
 
 .sidebar{
   // flex-grow: 1;
-  width: 300px;
+  width: 25%;
 }
 
 .content{
   // flex-grow: 3;
+  width: 100%;
+  // background: #F8F9FA;
+  margin-right: 10px;
+  padding-top: 20px;
 }

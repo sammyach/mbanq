@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,9 +9,9 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 export class SidebarComponent implements OnInit {
 
   toggler;
-  homeLink = 'active'
-  profileLink; savingsLink; loansLink; reportsLink; customersLink; usersLink;
-  constructor() { }
+  homeLink = 'active';
+  profileLink; savingsLink; loansLink; reportsLink; customersLink; usersLink; orgLink;
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -22,7 +23,7 @@ export class SidebarComponent implements OnInit {
   }
 
   goTo(path: string){
-    this.homeLink = this.profileLink = this.savingsLink = this.loansLink = this.reportsLink = this.customersLink = this.usersLink = '';
+    this.homeLink = this.profileLink = this.savingsLink = this.loansLink = this.reportsLink = this.customersLink = this.usersLink = this.orgLink = '';
     this.homeLink = path == 'home' ? 'active' : '';
     this.profileLink = path == 'profile' ? 'active' : '';
     this.savingsLink = path == 'savings' ? 'active' : '';
@@ -30,6 +31,9 @@ export class SidebarComponent implements OnInit {
     this.reportsLink = path == 'reports' ? 'active' : '';
     this.customersLink = path == 'customers' ? 'active' : '';
     this.usersLink = path == 'users' ? 'active' : '';
+    this.orgLink = path == 'organization' ? 'active' : '';
+
+    this.router.navigate([path]);
   }
 
 }
