@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './_shared/ui/header/header.component';
 import { FooterComponent } from './_shared/ui/footer/footer.component';
 import { RecoverAccountComponent } from './account/recover-account/recover-account.component';
+import { SidebarComponent } from './_shared/ui/sidebar/sidebar.component';
+import { ManageCustomersComponent } from './manage-customers/manage-customers.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RecoverAccountComponent } from './account/recover-account/recover-accou
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    RecoverAccountComponent
+    RecoverAccountComponent,
+    SidebarComponent,
+    ManageCustomersComponent
   ],
   imports: [
     BrowserModule,

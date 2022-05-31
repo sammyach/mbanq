@@ -1,0 +1,59 @@
+<nav #nav class="navigation">
+
+  <ul>
+      <li class="list {{homeLink}}">
+          <a (click)="goTo('home')">
+              <span class="icon"><i class="pi pi-home"></i></span>
+              <span class="title">Home</span>
+          </a>
+      </li>
+      <li class="list {{profileLink}}">
+          <a (click)="goTo('profile')">
+              <span class="icon"><i class="pi pi-user"></i></span>
+              <span class="title">Profile</span>
+          </a>
+      </li>
+      <li class="list {{customersLink}}">
+        <a (click)="goTo('customers')">
+            <span class="icon"><i class="pi pi-users"></i></span>
+            <span class="title">Customers</span>
+        </a>
+      </li>
+      <li class="list {{loansLink}}">
+          <a (click)="goTo('loans')">
+              <span class="icon"><i class="pi pi-credit-card"></i></span>
+              <span class="title">Loans</span>
+          </a>
+      </li>
+      <!-- <li class="list">
+          <a href="#">
+              <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+              <span class="title">Settings</span>
+          </a>
+      </li> -->
+      <li class="list {{savingsLink}}">
+          <a (click)="goTo('savings')">
+              <span class="icon"><i class="pi pi-wallet"></i></span>
+              <span class="title">Savings</span>
+          </a>
+      </li>
+      <li class="list {{reportsLink}}">
+          <a (click)="goTo('reports')">
+              <span class="icon"><i class="pi pi-chart-line"></i></span>
+              <span class="title">Reports</span>
+          </a>
+      </li>
+      <li class="list {{usersLink}}">
+        <a (click)="goTo('users')">
+            <span class="icon"><i class="pi pi-users"></i></span>
+            <span class="title">Users</span>
+        </a>
+      </li>
+      <!-- <li class="list">
+          <a href="#">
+              <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+              <span class="title">Logout</span>
+          </a>
+      </li> -->
+  </ul>
+</nav>
