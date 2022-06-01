@@ -1,4 +1,14 @@
+.wrapper{
+  border-top: 5px #1C61A5 solid;
+}
+
 :host ::ng-deep {
+  .p-datatable .p-datatable-header{
+    font-weight: 400;
+  }
+  .p-sortable-column-icon{
+    color: #1C61A5;
+  }
   .p-paginator {
       .p-paginator-current {
           margin-left: auto;
