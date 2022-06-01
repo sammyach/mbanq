@@ -8,6 +8,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import {TableModule} from 'primeng/table';
+import {AccordionModule} from 'primeng/accordion';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -45,7 +46,8 @@ import { ManageOrganizationComponent } from './manage-organization/manage-organi
     InputTextModule,
     ProgressSpinnerModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent],

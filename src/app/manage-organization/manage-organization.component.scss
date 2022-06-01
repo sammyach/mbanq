@@ -1,0 +1,44 @@
+:host ::ng-deep {
+  .p-card{
+    width: 100%;
+    border-top: 5px #1C61A5 solid;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .p-card .p-card-content{
+    padding-top: 0;
+  }
+}
+
+.org-name{
+  font-size: 1.5rem;
+  color: #1C61A5;
+  margin-bottom: 7px;
+}
+.org-detail{
+  display: flex;
+  justify-content: space-between;
+  font-size: .8rem;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.col > div {
+  padding: 5px;
+}
+
+.col:nth-child(2){
+  flex-grow: 2;
+}
+
+.label{
+  color: #1C61A5;
+  font-weight: 500;
+}
+
