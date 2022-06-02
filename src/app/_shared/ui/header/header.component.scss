@@ -12,8 +12,12 @@ header{
 }
 
 .head-logo{
-  color: #fff;
   font-size: 1.3rem;
+}
+
+.head-logo a{
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 911px){
