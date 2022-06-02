@@ -8,17 +8,20 @@ import { ManageOrganizationComponent } from './manage-organization/manage-organi
 import { AuthGuard } from './_helpers/auth.guard';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'recover-account', component: RecoverAccountComponent},
-  {path: 'customers', component: ManageCustomersComponent},
-  {path: 'organization', component: ManageOrganizationComponent},
+  {path: 'customers', component: ManageCustomersComponent, canActivate: [AuthGuard]},
+  {path: 'organization', component: ManageOrganizationComponent, canActivate: [AuthGuard]},
+
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
 
   {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [AuthGuard]
 })
 export class AppRoutingModule { }

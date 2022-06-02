@@ -5,9 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
+  public loggedIn = false;
   constructor() { }
 
-  loggedIn(){
+  logIn(){
     return false;
   }
 }
