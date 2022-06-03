@@ -8,8 +8,14 @@
     box-sizing: border-box;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 body{
   background: #E1F5FD;
+  overflow: hidden;
+
 }
 
 
