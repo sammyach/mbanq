@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './account/login/login.component';
 import { RecoverAccountComponent } from './account/recover-account/recover-account.component';
 import { HomeComponent } from './home/home.component';
+import { CustomerDetailsComponent } from './manage-customers/customer-details/customer-details.component';
 import { ManageCustomersComponent } from './manage-customers/manage-customers.component';
 import { ManageOrganizationComponent } from './manage-organization/manage-organization.component';
 import { AuthGuard } from './_helpers/auth.guard';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'recover-account', component: RecoverAccountComponent},
   {path: 'customers', component: ManageCustomersComponent, canActivate: [AuthGuard]},
+  {path: 'customer/:id/details', component: CustomerDetailsComponent, canActivate: [AuthGuard]},
   {path: 'organization', component: ManageOrganizationComponent, canActivate: [AuthGuard]},
 
   {path: '', redirectTo: 'home', pathMatch: 'full'},

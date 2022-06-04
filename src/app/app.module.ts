@@ -9,6 +9,8 @@ import {ButtonModule} from 'primeng/button';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import {TableModule} from 'primeng/table';
 import {AccordionModule} from 'primeng/accordion';
+import {TabViewModule} from 'primeng/tabview';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +23,7 @@ import { SidebarComponent } from './_shared/ui/sidebar/sidebar.component';
 import { ManageCustomersComponent } from './manage-customers/manage-customers.component';
 import { ListCustomersComponent } from './manage-customers/list-customers/list-customers.component';
 import { ManageOrganizationComponent } from './manage-organization/manage-organization.component';
+import { CustomerDetailsComponent } from './manage-customers/customer-details/customer-details.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { ManageOrganizationComponent } from './manage-organization/manage-organi
     SidebarComponent,
     ManageCustomersComponent,
     ListCustomersComponent,
-    ManageOrganizationComponent
+    ManageOrganizationComponent,
+    CustomerDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,8 @@ import { ManageOrganizationComponent } from './manage-organization/manage-organi
     ProgressSpinnerModule,
     ButtonModule,
     TableModule,
-    AccordionModule
+    AccordionModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,85 @@
+:host ::ng-deep {
+  .p-card{
+    width: 100%;
+    border-top: 5px #1C61A5 solid;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-bottom: 20px;
+  }
+
+  .p-card .p-card-content{
+    padding-top: 0;
+  }
+}
+
+.profile-pic{
+  width: 150px;
+  // height: 150px;
+  border-radius: 50%;
+  // border-radius: 0 50% 50% 50%;
+}
+
+.org-name{
+  font-size: 1.5rem;
+  color: #1C61A5;
+  margin-bottom: 7px;
+}
+
+.ent-detail{
+  display: flex;
+  justify-content: space-between;
+  font-size: .8rem;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.col > div {
+  padding: 5px;
+}
+
+.col:nth-child(2){
+  flex-grow: 2;
+}
+
+.label{
+  color: #1C61A5;
+  font-weight: 500;
+}
+
+:host ::ng-deep .tabview-custom {
+  i, span {
+    vertical-align: middle;
+  }
+  span {
+    margin: 0 .5rem;
+  }
+}
+:host ::ng-deep .p-button {
+   margin-right: .25rem;
+}
+:host ::ng-deep .p-tabview p {
+  line-height: 1.5; margin: 0;
+}
+
+// .extra-data{
+//   height: 300px;
+//   overflow-y: auto;
+// }
+
+.tab-body{
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: .8rem;
+}
+
+hr{
+  height: 1px;
+  border: none;
+  margin-top: 20px;
+  background-color: #1C61A5;
+}
