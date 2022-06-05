@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-.noscroll {
-  overflow: hidden;
-}
-
 html, body, .container{
   height: 100vh;
 }
@@ -19,7 +15,27 @@ html, body, .container{
 body{
   background: #E1F5FD;
   // overflow: hidden;
+}
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1C61A5 #959491 ;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #959491;//#ffc800;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1C61A5;
+  border-radius: 20px;
+  border: 3px solid #1C61A5;
 }
 
 
