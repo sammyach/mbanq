@@ -1,16 +1,18 @@
 :host ::ng-deep {
   .p-card{
     width: 100%;
-    border-top: 5px #1C61A5 solid;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
+    border-radius: 5px;
   }
 
   .p-card .p-card-content{
     padding-top: 0;
   }
+}
+
+.page-title{
+  color: #1C61A5;
+  font-size: 1.5rem;
+  padding: 10px 0;
 }
 
 .org-name{

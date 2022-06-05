@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
 
       if(user == 'a@a.com'){
         this.auth.loggedIn = true;
-        this.router.navigate(['organization'])
+        this.router.navigate(['home'])
       }else{
         this.loading = false;
       }

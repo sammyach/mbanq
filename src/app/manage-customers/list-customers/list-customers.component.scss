@@ -1,14 +1,23 @@
 .wrapper{
-  border-top: 5px #1C61A5 solid;
+  // border-top: 5px #1C61A5 solid;
 }
 
 :host ::ng-deep {
   .p-datatable .p-datatable-header{
     font-weight: 400;
+    background: none;
+
   }
-  .p-sortable-column-icon{
+  .p-datatable.p-datatable-customers .p-datatable-header{
+    padding: .8rem 0 !important;
+  }
+  .p-datatable.p-datatable-customers .p-datatable-thead>tr>th{
     color: #1C61A5;
   }
+  .p-datatable .p-sortable-column .p-sortable-column-icon, .p-column-filter-menu-button{
+    color: #1C61A5 !important;
+  }
+
   .p-paginator {
       .p-paginator-current {
           margin-left: auto;
