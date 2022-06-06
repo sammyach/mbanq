@@ -78,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 991px) {
   :host ::ng-deep {
       .p-datatable {
           &.p-datatable-customers {
@@ -114,7 +114,19 @@
               }
           }
       }
+
+      .p-datatable.p-datatable-customers .p-datatable-header{
+        font-size: 1.1rem;
+        padding-left: .8rem !important;
+      }
+      .p-datatable.p-datatable-customers .p-datatable-header .table-header{
+        line-height: 3rem;
+      }
   }
+  // .p-input-icon-left>i{
+  //   top: 30%;
+  // }
+
 
 }
 
