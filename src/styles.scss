@@ -14,7 +14,7 @@ html, body, .container{
 
 body{
   background: #E1F5FD;
-  // overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Works on Firefox */
@@ -37,5 +37,6 @@ body{
   border-radius: 20px;
   border: 3px solid #1C61A5;
 }
+
 
 
