@@ -1,18 +1,14 @@
 .page-title{
   color: #1C61A5;
   font-size: 1.5rem;
-  padding: 10px 0;
+  padding: .8rem 0;
+  border-bottom: 2px solid #1C61A5;
 }
 
 :host ::ng-deep {
   .p-card{
     width: 100%;
-    // border-top: 5px #1C61A5 solid;
     border-radius: 5px;
-    // border-bottom-right-radius: 5px;
-    // border-bottom-left-radius: 5px;
-    // border-top-right-radius: 0px;
-    // border-top-left-radius: 0px;
     margin-bottom: 20px;
   }
 
@@ -39,7 +35,7 @@
   // border-radius: 0 50% 50% 50%;
 }
 
-.org-name{
+.ent-name{
   font-size: 1.5rem;
   color: #1C61A5;
   margin-bottom: 7px;
@@ -100,4 +96,17 @@ hr{
   border: none;
   margin-top: 20px;
   background-color: #1C61A5;
+}
+
+@media (max-width: 911px){
+  .page-title{
+    font-size: 1rem;
+    padding: .7rem 1rem;
+  }
+  .ent-name{
+    font-size: 1rem;
+  }
+  .ent-detail{
+    flex-direction: column;
+  }
 }

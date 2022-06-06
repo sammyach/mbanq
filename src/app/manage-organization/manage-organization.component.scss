@@ -12,7 +12,8 @@
 .page-title{
   color: #1C61A5;
   font-size: 1.5rem;
-  padding: 10px 0;
+  padding: .8rem 0;
+  border-bottom: 2px solid #1C61A5;
 }
 
 .org-name{
@@ -42,5 +43,18 @@
 .label{
   color: #1C61A5;
   font-weight: 500;
+}
+
+@media (max-width: 911px){
+  .page-title{
+    font-size: 1rem;
+    padding: .7rem 1rem;
+  }
+  .org-name{
+    font-size: 1rem;
+  }
+  .org-detail{
+    flex-direction: column;
+  }
 }
 
