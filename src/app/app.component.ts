@@ -8,5 +8,17 @@ import { AuthService } from './_services/auth.service';
 })
 export class AppComponent {
   title = 'mbanqSPA';
+  private _sideToggle='';
+
+  set sideToggle(data: string){
+    this._sideToggle = data;
+  }
+
+  get sideToggle(){ return this._sideToggle; }
   constructor(public auth: AuthService){}
+
+  toggleSidebar(data){
+    console.log(data);
+    this.sideToggle = data;
+  }
 }

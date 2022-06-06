@@ -7,7 +7,7 @@ header{
 }
 
 .main-header{
-  margin: 0 80px;
+  margin: 0 6rem;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -22,9 +22,22 @@ header{
   text-decoration: none;
 }
 
+.icon{
+  margin-right: .7rem;
+  color: #fff;
+  // display: none;
+}
+
+.icon .pi{
+  font-size: 1.5rem;
+}
+
 @media (max-width: 911px){
   .main-header{
-    margin: 0 20px;
+    margin: 0 1rem;
+  }
+  .icon{
+    display: inline-block;
   }
 }
 

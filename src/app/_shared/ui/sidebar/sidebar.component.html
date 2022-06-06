@@ -1,4 +1,4 @@
-<nav #nav class="navigation">
+<nav #nav class="navigation {{sidebarToggle}}">
 
   <ul>
       <li class="list {{homeLink}}">
@@ -7,12 +7,12 @@
               <span class="title">Home</span>
           </a>
       </li>
-      <li class="list {{profileLink}}">
+      <!-- <li class="list {{profileLink}}">
           <a (click)="goTo('profile')">
               <span class="icon"><i class="pi pi-user"></i></span>
               <span class="title">Profile</span>
           </a>
-      </li>
+      </li> -->
       <li class="list {{customersLink}}">
         <a (click)="goTo('customers')">
             <span class="icon"><i class="pi pi-users"></i></span>

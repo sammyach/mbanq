@@ -1,7 +1,7 @@
-  <app-header></app-header>
+  <app-header (sidebarClassToggle)="toggleSidebar($event)"></app-header>
   <section>
     <div class="sidebar" *ngIf="auth.loggedIn">
-      <app-sidebar></app-sidebar>
+      <app-sidebar [sidebarToggle]="sideToggle"></app-sidebar>
     </div>
     <div class="content">
       <router-outlet></router-outlet>
